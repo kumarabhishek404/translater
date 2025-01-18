@@ -1,4 +1,4 @@
-import { type Browser, executablePath, type Page } from "puppeteer";
+import { type Browser, type Page } from "puppeteer";
 import puppeteer from "./puppeteer";
 
 const { PUPPETEER_WS_ENDPOINT } = process.env;
