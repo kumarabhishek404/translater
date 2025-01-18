@@ -46,7 +46,7 @@ export default class PagePool {
     const launchOptions = {
       acceptInsecureCerts: true,
       headless: process.env.DEBUG !== "true",
-      executablePath: executablePath(),
+      executablePath: "/opt/render/.cache/puppeteer",
       userDataDir: "/tmp/translateer-data",
       args: [
         "--no-sandbox",
