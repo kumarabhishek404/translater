@@ -13,9 +13,13 @@ services:
       PAGE_COUNT: "5"
     depends_on:
       - browserless
+  build:
+    commands:
+      - ./render-build.sh
 
   browserless:
     image: browserless/chrome
     restart: always
     environment:
       CONNECTION_TIMEOUT: "-1"
+

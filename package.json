@@ -9,7 +9,8 @@
 		"debug": "DEBUG=true npm run dev",
 		"start": "node dist/app.js",
 		"build": "rm -rf dist && tsc && cp -R src/public dist/public",
-		"bootstrap": "npm ci && npm run build && npm run start"
+		"bootstrap": "npm ci && npm run build && npm run start",
+		"postinstall": "npx puppeteer browsers install"
 	},
 	"author": "Songkeys",
 	"license": "ISC",
